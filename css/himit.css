@@ -1,0 +1,262 @@
+:root {
+    --mos-back: #eee;
+    --man-color: #19c8fa;
+}
+
+* {
+    box-sizing: border-box;
+    /* margin-left: 100px;
+    margin-right: 100px;*/
+}
+
+body {}
+
+@media(min-width:786px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*Medium*/
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*Large*/
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header .head {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    z-index: 3;
+
+}
+
+
+
+.header .head .imgs img {
+    width: 70px;
+    height: 70px;
+}
+
+@media(max-width: 767px) {
+    .header .head .imgs img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+header nav .toggle {
+    position: relative;
+    bottom: -13px;
+    right: 5px;
+
+}
+
+@media(min-width:768px) {
+    header nav .toggle {
+
+        display: none;
+
+
+    }
+}
+
+
+.header .head .home ul {
+    display: flex;
+    direction: rtl;
+    list-style-type: none;
+}
+
+@media(max-width: 767px) {
+    .header .head .home ul {
+        display: none;
+    }
+}
+
+.header .home nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    z-index: 5;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.header .head .home ul li {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    transition: .3s;
+}
+
+
+.header .head .home ul li a {
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+
+}
+
+/*start container*/
+.cont {
+    position: relative;
+}
+
+
+.cont .container .text {
+    margin-right: -60px;
+    position: relative;
+    left: -20;
+    z-index: 2;
+    direction: rtl;
+    top: 170px;
+}
+
+
+@media(max-width:767px) {
+    .cont .container .text {
+        max-width: 100%;
+    }
+
+    .cont .container .text h1 {
+        position: relative;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cont .container .text p {
+        position: relative;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #000;
+        text-align: center;
+    }
+
+    .cont .container .text button {
+        position: relative;
+        margin: 0 25px;
+    }
+}
+
+.cont .container .text h1 {
+    color: #b1cbdc;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.cont .container .text p {
+    padding-top: 20px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.cont .container .text button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid var(--man-color);
+    background-color: transparent;
+    font-size: 20px;
+    position: absolute;
+    right: 100px;
+    transition: .3s;
+}
+
+.cont .container .text button:hover {
+    border: none;
+    background-color: var(--man-color);
+    color: #fff;
+}
+
+.cont .container .text button a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.cont .container .imgs1 img {
+    position: absolute;
+    /* left: 780px;*/
+    width: 400px;
+    height: 500px;
+    top: 10px;
+    left: 50px;
+}
+
+@media(max-width: 768px) {
+    .cont .imgs1 img {
+        /*left: -10px;
+        top: 100px;*/
+        display: none;
+    }
+}
+
+.cont .imgsme img {
+    position: relative;
+    top: -150px;
+    left: -100;
+    width: 100%;
+    height: calc(100vh - -163px);
+}
+
+@media(min-width: 767px) {
+    .cont .imgsme img {
+        display: none;
+    }
+}
+
+.cont .container .icon {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 390px;
+    right: 230px;
+    font-size: 30px;
+    margin: 10px;
+    z-index: 3;
+    /* color: #b1cbdc;*/
+    color: #014073;
+}
+
+.cont .container .icon i {
+    margin: 0 10px;
+}
+
+.cont .container .icon a {
+    color: #014073;
+}
+
+@media(max-width:767px) {
+    .cont .container .icon {
+        z-index: 3;
+        position: relative;
+        right: 30%;
+        top: -770px;
+    }
+
+    .cont .imgsme img {
+        top: -140px;
+        bottom: 100px;
+    }
+}
