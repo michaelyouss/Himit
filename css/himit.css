@@ -133,7 +133,8 @@ body {
 
 @media(max-width:767px) {
     .cont .container .text {
-        max-width: 100%;
+        width: 100%;
+        position: absolute;
     }
 
     .cont .container .text h1 {
@@ -142,13 +143,15 @@ body {
 
     .cont .container .text p {
         position: relative;
-        margin-top: 20px;
-        margin-right: -50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-right: -200px;
     }
 
     .cont .container .text button {
         position: relative;
        margin: auto;
+      
     }
 }
 
