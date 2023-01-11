@@ -9,7 +9,10 @@
     margin-right: 100px;*/
 }
 
-body {}
+body {
+    overflow: hidden auto;
+    
+}
 
 @media(min-width:786px) {
     .container {
@@ -108,7 +111,7 @@ header nav .toggle {
 
 
 .header .head .home ul li a {
-    color: rgb(2, 2, 2);
+    color: #014073;
     text-decoration: none;
 
 }
@@ -116,13 +119,14 @@ header nav .toggle {
 /*start container*/
 .cont {
     position: relative;
+    
 }
 
 
 .cont .container .text {
     margin-right: -60px;
-    position: relative;
-    left: -20;
+    position: absolute;
+    right: 170px;
     z-index: 2;
     direction: rtl;
     top: 170px;
@@ -227,18 +231,12 @@ header nav .toggle {
 }
 
 .cont .container .icon {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    top: 390px;
-    right: 230px;
-    font-size: 30px;
-    margin: 10px;
-    z-index: 3;
-    /* color: #b1cbdc;*/
     color: #014073;
 }
-
+.cont .container .bo{
+    display: flex;
+    flex-direction: column;
+}
 .cont .container .icon i {
     margin: 0 10px;
 }
