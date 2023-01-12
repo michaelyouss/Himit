@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow: hidden auto;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Smol*/
+@media(min-width:786px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*Medium*/
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*Large*/
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+
+.container .logo img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.container .logo {
+    z-index: 2;
+}
+
+.container nav ul {
+    display: inline-flex;
+    direction: rtl;
+    /* flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ top: 50%;*/
+}
+
+.container nav ul li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+}
+
+.container nav ul a {
+    text-decoration: none;
+    padding: 8px;
+    color: #777;
+}
+
+.container nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: rgb(0 0 0 / 90%);
+}
+
+@media(max-width: 767px) {
+    .container nav ul {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    header nav .toggle {
+        display: none;
+    }
+}
+
+.home .container {
+    position: relative;
+    height: calc(100vh - 20px);
+}
+
+.home .imgs1 img {
+    width: 500px;
+    height: 500px;
+}
+
+.home .container .text {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    direction: rtl;
+}
+
+.home .container h1 {
+    font-size: 35px;
+    color: #000;
+}
+
+.home .container p {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width:767px) {
+    .home .container .text {
+        position: absolute;
+        margin-right: 20px;
+        top: 20px;
+
+    }
+
+    .home .container .bt-icon {
+        position: absolute;
+        margin-bottom: 50px;
+    }
+}
+
+.home .container .bt-icon {
+    position: absolute;
+    right: 180px;
+    top: 60%;
+
+    /* margin-left: 20px;*/
+
+}
+
+.home .container .bt-icon button {
+
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 2px solid rgb(44, 39, 39);
+
+}
+
+.home .container .bt-icon button a {
+    text-decoration: none;
+    color: rgb(19, 18, 18);
+    font-size: 30px;
+}
+
+/*.home .container  .icon{
+    margin-right:30px  ;
+}*/
+.home .container .bt-icon .icon i {
+    position: relative;
+    padding: 25px 10px;
+    font-size: 30px;
+    right: 10px;
+    color: #777;
+}
+
+.home .imgs1 {
+    position: absolute;
+    bottom: 20%;
+    left: 30px;
+}
+
+@media(min-width:768px) {
+    .home .container .imgsme {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .home .imgs1 {
+        display: none;
+    }
+}
+
+.home .imgsme img {
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+/*==========================================================*/
+/*Start Doctor*/
+.doctor {
+    margin-top: 10px;
+    position: relative;
+    height: 700px;
+    background-color: #eee;
+}
+
+.doctor .container .nb {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    color: #777;
+}
+
+.doctor .container .nbb {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    background-color: #ddd;
+    width: 200px;
+}
+
+.doctor .container .nbb h3 {
+    text-align: center;
+}
+
+.doctor .container .nbb p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.doctor .container .iii img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ddd;
+}
+
+.doctor .container .fot {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    bottom: -500px;
+}
+
+@media(min-width:767px) {
+    .doctor .container .fot {
+        text-align: center;
+        position: relative;
+        bottom: -450px;
+    }
+}
+
+.doctor .container .fot .fo img {
+    width: 50px;
+    height: 50px;
+}
+
+.doctor .container .fot .fo   {
+
+    padding: 5px;
+}
+
+.doctor .container .fot .fo h3 {
+    border: 3px solid #ddd;
+    background-color: #ddd;
+    outline: 5px solid #ddd;
+    margin: 0 2px;
+    height: 60px;
+}
+/*==================================================*/
+/*Start foter*/
+ .foter .container .prgrif{
+    position: relative;
+display: flex;
+justify-content:space-around;
+align-items: center;
+height: 100px;
+background-color: #000;
+
+}
+.foter .container .prgrif p{
+    position: absolute;
+    left: 22px;
+    top: 20px;
+color: #777;
+}
+.foter .container .prgrif span {
+    position: relative;
+left: 50px;
+width: 100px;
+height: 20px;
+color: #fff;
+}
+
+
+.foter .container .icon{
+    position: absolute;
+    left: 253px;
+}
+.foter .container .icon a{
+color: #777;
+font-size: 20px;
+}
+
+@media(min-width: 767px){
+    .foter .container .icon {
+        position: absolute;
+        margin-left: 100px;
+    }
+}
