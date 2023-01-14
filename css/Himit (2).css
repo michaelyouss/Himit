@@ -74,14 +74,14 @@ body {
     
 }
 .container nav ul :hover{
-    color: rgb(0, 0, 0);
-    background-color: #ddd;
+   /* color: rgb(0, 0, 0);
+    background-color: #ddd;*/
     
 }
 .container nav ul a {
     text-decoration: none;
     padding: 8px;
-    color: #777;
+    color: #fff;
 }
 
 .container nav ul.active {
@@ -166,7 +166,7 @@ body {
 }
 
 .home .container .bt-icon button {
-
+border-radius: 10px;
     background-color: transparent;
     padding: 5px 10px;
     border: 2px solid rgb(44, 39, 39);

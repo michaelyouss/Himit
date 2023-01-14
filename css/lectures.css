@@ -1,7 +1,13 @@
-:root{
-    --moz-col-h:#98dad9;
+:root {
+    --moz-hom:#eaebed;
+    --moz-col-h: #98dad9;
+    --moz-sac:#2e424d;
+    --moz-hed:#5b8291;
+    --moz-buto:#fff;
+    
 
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,15 +54,15 @@ h2 {
     grid-area: h2;
     text-align: center;
     padding: 10px;
-    background-color: #eee;
-  
+    background-color: var(--moz-col-h);
+
 }
 
 nav {
     grid-area: nav;
     text-align: center;
     padding: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
     position: relative;
 }
 
@@ -116,8 +122,8 @@ section {
     grid-area: ction;
     display: flex;
     position: relative;
-    background-color: #ddd;
-   /* background: linear-gradient(to right bottom, #eee, #777);*/
+    background-color:var(--moz-sac);
+    /* background: linear-gradient(to right bottom, #eee, #777);*/
 }
 
 section .container {
@@ -141,12 +147,13 @@ section .container {
 }
 
 section .container .boxs {
- background-color: #ddd;
+    background-color: var(--moz-hed);
     border-radius: 10px;
     display: inline-block;
     margin: 10px 5px;
     position: relative;
     justify-content: space-around;
+    box-shadow: 0px 3px 22px -3px var(--moz-hom);
 }
 
 section .container .box {
@@ -170,13 +177,13 @@ section .container .box .text {
 
 section .container .box .text h3 {
     text-align: center;
-    color: var(--moz-col-h);
+    color: var(--moz-hom);
 }
 
 section .container .box .text p {
     text-align: end;
     font-size: 20px;
-    color: #777;
+
     display: inline-block;
 }
 
@@ -185,29 +192,33 @@ section .container .box .text button {
     margin: 46px 0 0 0;
     padding: 3px 10px;
     left: 7px;
-    border: 1px solid #777;
+    font-size: 20px;
+    border: 1px solid var(--moz-col-h);
     border-radius: 5px;
+    top:40px;
+    background-color: transparent;
     transition: .3s;
-  
+
 }
-section .container .box .text a , button:hover{
-  
-    
-}
+
+section .container .box .text a,
+button:hover {}
 
 section .container .box .text a {
     text-decoration: none;
-    color: #000;
+    color: var(--moz-buto);
     font-size: 18px;
 }
+
 /*================================================*/
 /*aside*/
 aside {
     grid-area: aside;
-    background-color: #ddd;
+    background-color: var(--moz-sac);
     display: flex;
     position: relative;
 }
+
 aside .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -230,12 +241,13 @@ aside .container {
 
 
 aside .container .boxs {
-    background-color: #eee;
+    background-color: var(--moz-hed);
     border-radius: 10px;
     display: inline-block;
     margin: 10px 5px;
     position: relative;
     justify-content: space-around;
+    box-shadow: 0px 3px 22px -3px var(--moz-hom);
 }
 
 aside .container .box {
@@ -259,22 +271,25 @@ aside .container .box .text {
 
 aside .container .box .text h3 {
     text-align: center;
-    color: var(--moz-col-h);
+    color: var(--moz-buto);
 }
 
 aside .container .box .text p {
     text-align: end;
     font-size: 20px;
-    color: #777;
+    color: #000;
 }
 
 aside .container .box .text button {
+
+    background-color: transparent;
     position: absolute;
     margin: 2px 0 0 0;
     padding: 3px 10px;
     left: 7px;
-    border: 1px solid #777;
+   border: 1px solid var(--moz-col-h);
     border-radius: 5px;
+    top: 90px;
 }
 
 aside .container .box .text a {
@@ -282,56 +297,43 @@ aside .container .box .text a {
     color: #000;
     font-size: 18px;
 }
+
 /*================================================*/
 
 footer {
     grid-area: footer;
     text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #fff;
+    color: #000;
     font-size: 20px;
 }
 
 /*==========================================*/
 
-.img41 img{
- height: 100vh;
- width: 100%;
- position: relative;
-}
-.img41 .but a{
-position: absolute;
-bottom: 360px;
-left: 31px;
-padding: 10px 12px ;
-background-color: #44508d;
-border-radius: 5px;
-text-decoration: none;
-color: wheat;
-font-size: 20px;
+.img41 img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.img41 .but a {
+    position: absolute;
+    bottom: 379px;
+    left: 153px;
+    padding: 10px 12px;
+    background-color: #7396e5;
+    border-radius: 5px;
+    text-decoration: none;
+    color: wheat;
+    font-size: 20px;
+}
+@media(max-width: 767px){
+    .img41 .but a {
+        width: 100%;
+    position: relative;
+  top: -70px;
+  left: 34%;
+ 
+    }
+ 
+}
