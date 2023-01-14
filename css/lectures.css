@@ -142,7 +142,7 @@ section .container {
 
     section .container .boxs {
         position: relative;
-        right: 13px;
+        right: 15px;
     }
 }
 
@@ -183,7 +183,6 @@ section .container .box .text h3 {
 section .container .box .text p {
     text-align: end;
     font-size: 20px;
-
     display: inline-block;
 }
 
@@ -235,7 +234,7 @@ aside .container {
 
     aside .container .boxs {
         position: relative;
-        right: 13px;
+        right: 15px;
     }
 }
 
@@ -294,7 +293,7 @@ aside .container .box .text button {
 
 aside .container .box .text a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 18px;
 }
 

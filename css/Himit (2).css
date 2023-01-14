@@ -83,6 +83,8 @@ body {
 }
 .container nav ul a {
     text-decoration: none;
+  background-color: transparent;
+
     padding: 8px;
     color: #fff;
 }
@@ -142,7 +144,7 @@ body {
 
 .home .container p {
     font-size: 30px;
-    color: #5b8291;
+    color: #000;
 }
 
 @media(max-width:767px) {
@@ -178,6 +180,7 @@ border-radius: 10px;
 
 .home .container .bt-icon button a {
     text-decoration: none;
+    
     color: rgb(19, 18, 18);
     font-size: 30px;
 }
@@ -190,7 +193,7 @@ border-radius: 10px;
     padding: 25px 10px;
     font-size: 30px;
     right: 10px;
-    color: #5b8291;
+    color: #0001;
 }
 
 .home .imgs1 {
