@@ -13,6 +13,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow: hidden auto;
+}
+
 
 /*Smol*/
 @media(min-width:786px) {
@@ -201,8 +205,9 @@ section .container .box .text .tr{
 
 section .container .box .text button {
     position: absolute;
-    margin: 46px 0 0 0;
-    padding: 3px 10px;
+    
+    margin: 43px 0 0 0;
+    padding: 4px 10px;
     left: 7px;
     font-size: 20px;
     border: 1px solid var(--moz-col-h);
