@@ -153,7 +153,7 @@ section .container .boxs {
     margin: 10px 5px;
     position: relative;
     justify-content: space-around;
-    box-shadow: 0px 3px 22px -3px var(--moz-hom);
+   /* box-shadow: 0px 3px 22px -3px var(--moz-hom);*/
 }
 
 section .container .box {
@@ -247,7 +247,7 @@ aside .container .boxs {
     margin: 10px 5px;
     position: relative;
     justify-content: space-around;
-    box-shadow: 0px 3px 22px -3px var(--moz-hom);
+    /*box-shadow: 0px 3px 22px -3px var(--moz-hom);*/
 }
 
 aside .container .box {
