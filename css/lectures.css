@@ -31,7 +31,7 @@
     background-color: #eee;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 50px 50px 38% auto 35px;
+    grid-template-rows: 50px 50px 38% auto 37px;
     grid-template-areas: "nav nav nav nav nav nav nav nav nav"
         "h2 h2 h2 h2 h2 h2 h2 h2 h2 "
         "ction ction ction ction ction ction ction ction ction"
@@ -182,7 +182,7 @@ section .container .box .text button {
     border-radius: 5px;
     transition: .3s;
 }
-section .container .box .text button:hover{
+section .container .box .text a , button:hover{
     background-color: #ddd;
     
 }
