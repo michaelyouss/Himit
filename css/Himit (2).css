@@ -57,6 +57,7 @@ body {
 .container nav ul {
     display: inline-flex;
     direction: rtl;
+    transition: .5s;
     /* flex: 1;
    display: flex;
    align-items: center;
@@ -68,12 +69,12 @@ body {
     list-style-type: none;
     padding: 10px;
     border-bottom: 2px solid rgb(0, 0, 0);
-    transition: .3s;
+   
     
     
 }
 .container nav ul :hover{
-    color: #000;
+    color: rgb(0, 0, 0);
     background-color: #ddd;
     
 }
@@ -97,6 +98,7 @@ body {
 @media(max-width: 767px){
     .container nav ul li {
         width: 100%;
+       
         text-align: center;
     }
 }
