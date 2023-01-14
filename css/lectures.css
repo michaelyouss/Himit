@@ -184,13 +184,13 @@ section .container .box .text h3 {
 
 section .container .box .text p {
     text-align: end;
-    font-size: 18px;
+    font-size: 15px;
     display: inline-block;
     margin-top: 10px;
 }
 section .container .box .text .tr{
 
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 3px;
     direction: rtl;
     color: rgb(14, 198, 204);
@@ -289,11 +289,11 @@ aside .container .box .text h3 {
 
 aside .container .box .text p {
     text-align: end;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
 }
 aside .container .box .text .tr{
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 3px;
     direction: rtl;
     color: rgb(14, 198, 204);
