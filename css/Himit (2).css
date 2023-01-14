@@ -266,10 +266,10 @@ body {
 }
 
 .doctor .container .fot .fo h3 {
-    border: 3px solid #ddd;
+    border: 2px solid #ddd;
     background-color: #ddd;
-    outline: 5px solid #ddd;
-    margin: 0 2px;
+   /* outline: 5px solid #ddd;*/
+    margin: 0 1px;
     height: 70px;
 }
 /*==================================================*/
