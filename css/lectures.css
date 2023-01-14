@@ -155,7 +155,7 @@ section .container .boxs {
     background-color: var(--moz-hed);
     border-radius: 10px;
     display: inline-block;
-    margin: 10px 2px;
+    margin: 10px 3px;
     position: relative;
     justify-content: space-around;
    /* box-shadow: 0px 3px 22px -3px var(--moz-hom);*/
@@ -263,7 +263,7 @@ aside .container .boxs {
     background-color: var(--moz-hed);
     border-radius: 10px;
     display: inline-block;
-    margin: 10px 2px;
+    margin: 10px 3px;
     position: relative;
    
     justify-content: space-around;
