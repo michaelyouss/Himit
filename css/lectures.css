@@ -206,7 +206,7 @@ section .container .box .text .tr{
 section .container .box .text button {
     position: absolute;
     
-    margin: 40px 0 0 0;
+    margin: 35px 0 0 0;
     padding: 4px 10px;
     left: 7px;
     font-size: 20px;
