@@ -170,11 +170,12 @@ section .container .box .text p {
     text-align: end;
     font-size: 20px;
     color: #777;
+    display: inline-block;
 }
 
 section .container .box .text button {
     position: absolute;
-    margin: 18px 0 0 0;
+    margin: 46px 0 0 0;
     padding: 3px 10px;
     left: 7px;
     border: 1px solid #777;
@@ -202,7 +203,7 @@ aside {
 aside .container {
     padding-left: 20px;
     padding-right: 20px;
-    height: 250px;
+    height: 260px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -260,7 +261,7 @@ aside .container .box .text p {
 
 aside .container .box .text button {
     position: absolute;
-    margin: 10px 0 0 0;
+    margin: 2px 0 0 0;
     padding: 3px 10px;
     left: 7px;
     border: 1px solid #777;
